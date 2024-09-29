@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 5px;
+        }
+
+        .profile-container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .profile-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .profile-info img {
+            width: 270px;
+            height: 152px;
+            background-color: #ddd;
+            display: block;
+        }
+
+        .profile-info iframe {
+            width: 270px;
+            height: 152px;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        ul.skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.skills-list li {
+            margin-bottom: 10px;
+        }
+
+        ul.skills-list li span.skill-name {
+            font-weight: bold;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-container">
+        <h1>Profil Pribadi</h1>
+        <div class="profile-info">
+            <!-- profile picture -->
+            <div>
+                <h2>Foto Profil</h2>
+                <img src="Screenshot (335).png" alt="Foto Profil">
+            </div>
+            <!-- Embedded video -->
+            <div>
+                <h2>Video Perkenalan</h2>
+                <iframe src="csgocik.mp4" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <h2>Keterampilan</h2>
+        <!-- About Me -->
+        <span>Perkenalkan nama saya Muhammad Ardhi Alfatih dari kelas IT-46-03 dengan NIM 1303223034</span>
+
+        <h2>Keterampilan</h2>
+        <!-- skills and levels -->
+        <div class="skills-container">
+            <div class="skill-row">
+                <span>Keterampilan :</span>
+                <span>Sangat Bagus</span>
+            </div>
+            <div class="skill-row">
+                <span>HTML/CSS :</span>
+                <span>Biasa Saja</span>
+            </div>
+            <div class="skill-row">
+                <span>JavaScript :</span>
+                <span>Biasa Saja</span>
+            </div>
+            <div class="skill-row">
+                <span>Python :</span>
+                <span>Biasa Saja</span>
+            </div>
+        </div>
+
+        <h2>Hubungi Saya</h2>
+        <!-- Form contact -->
+        <form action="submit.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Pesan:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <h2>Media Sosial:</h2>
+        <p>
+            <a href="#">LinkedIn</a> |
+            <a href="https://github.com/Ardhiajaa" target="_blank">GitHub</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </div>
+</body>
+
+</html>
